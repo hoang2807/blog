@@ -1,0 +1,19 @@
+---
+import MainLayout from "@layouts/MainLayout.astro";
+import Link from "@components/Link.astro";
+---
+
+<MainLayout title="About" description="My About Page">
+  <section class="container about" aria-label="About me">
+    <img src="/images/logo.jpg" alt="My logo" width="200" height="200" />
+    <div class="content">
+      <h1 class="h1">My Blog</h1>
+      <p>From Hanoi University of Civil Engineering</p>
+      <Link
+        href="https://github.com/hoang2807"
+        style="primary"
+        text="Contact Me"
+      />
+    </div>
+  </section>
+</MainLayout>

@@ -1,0 +1,32 @@
+---
+import Link from "@components/Link.astro";
+
+const { prevUrl, nextUrl } = Astro.props;
+---
+
+<nav aria-label="Blog pages">
+  {
+    prevUrl && (
+      <Link
+        text="Previous"
+        href={prevUrl}
+        style="primary"
+        borderVisible={true}
+        isFilled={false}
+        icon={{ name: "ant-design:arrow-left-outlined", side: "left" }}
+      />
+    )
+  }
+  {
+    nextUrl && (
+      <Link
+        text="Next"
+        href={nextUrl}
+        style="primary"
+        borderVisible={true}
+        isFilled={false}
+        icon={{ name: "ant-design:arrow-right-outlined", side: "right" }}
+      />
+    )
+  }
+</nav>

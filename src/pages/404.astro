@@ -1,0 +1,30 @@
+---
+import MainLayout from "@layouts/MainLayout.astro";
+import Link from "@components/Link.astro";
+---
+
+<MainLayout title="Page Not Found">
+  <div
+    class="container"
+    style={{
+      display: "grid",
+      placeItems: "center",
+      textAlign: "center",
+      gap: "var(--space-sm)",
+    }}
+  >
+    <div>
+      <h1 class="h1">Something's wrong here?</h1>
+      <p>we can't find the page you're looking for</p>
+    </div>
+    <Link
+      href="/"
+      style="secondary"
+      text="Go Home"
+      icon={{
+        name: "ant-design:home-outlined",
+        side: "right",
+      }}
+    />
+  </div>
+</MainLayout>

@@ -1,0 +1,25 @@
+{
+  "name": "blog",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.4.1",
+    "astro": "^4.1.2",
+    "astro-icon": "^1.0.2",
+    "postcss": "^8.4.33",
+    "postcss-preset-env": "^9.3.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@iconify-json/ant-design": "^1.1.13",
+    "prettier": "^3.2.2",
+    "prettier-plugin-astro": "^0.12.3"
+  }
+}
